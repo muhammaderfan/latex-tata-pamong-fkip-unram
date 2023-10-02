@@ -1,0 +1,47 @@
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+\usepackage{internal/uithesis}
+\input{internal/hype.indonesia}
+\input{settings}
+
+
+\begin{document}
+\pagenumbering{roman}
+\addChapter{HALAMAN SAMPUL}
+% \includepdf[pages=1,fitpaper]{assets/pdfs/sapul.pdf}
+\includepdf{assets/pdfs/Cover-tata-pamong.pdf}
+
+% \addChapter{HALAMAN PENGESAHAN}
+% \includepdf[pages=1,fitpaper]{assets/pdfs/pengesahan.pdf}
+% \setcounter{page}{3}
+\addChapter{KATA PENGANTAR}
+\input{src/00-front_matter/identitas}
+
+\phantomsection
+\tableofcontents
+\clearpage
+% \phantomsection
+% \listoffigures
+% \clearpage
+% \phantomsection
+% \listoftables
+% \clearpage
+%\phantomsection
+%\listoflistings
+%\clearpage
+
+% \addChapter{RINGKASAN}
+% \input{src/00-front_matter/ringkasan}
+
+\pagenumbering{arabic}
+
+\input{src/01-body/01-bab1}
+\input{src/01-body/02-bab2}
+\input{src/01-body/03-bab3}
+% \input{src/01-body/04-bab4}
+
+% \bibliographystyle{apalike}
+% \bibliography{pustaka}
+
+
+
+\end{document}
